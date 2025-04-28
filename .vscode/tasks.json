@@ -4,7 +4,7 @@
         {
             "label": "Run Verilog with Icarus",
             "type": "shell",
-            "command": "iverilog -o verilog/sim/${fileBasenameNoExtension}.vvp verilog/design/${fileBasenameNoExtension}.v verilog/tb/${fileBasenameNoExtension}.v;vvp verilog/sim/${fileBasenameNoExtension}.vvp",
+            "command": "iverilog -o verilog/sim/${fileBasenameNoExtension}.vvp verilog/design/${fileBasenameNoExtension}.v verilog/tb/${fileBasenameNoExtension}_tb.v;vvp verilog/sim/${fileBasenameNoExtension}.vvp",
             "group": {
                 "kind": "build",
                 "isDefault": true
