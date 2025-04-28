@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Verilog with Icarus",
+            "type": "shell",
+            "command": "iverilog -o verilog/sim/${fileBasenameNoExtension}.vvp verilog/design/${fileBasenameNoExtension}.v verilog/tb/${fileBasenameNoExtension}.v;vvp verilog/sim/${fileBasenameNoExtension}.vvp",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
